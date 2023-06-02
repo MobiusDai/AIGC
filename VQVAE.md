@@ -45,7 +45,7 @@ posteriors and priors in VAEs are assumed normally distributed with diagonal cov
 
 $input:x \rightarrow encoder \rightarrow z_e(x)$
 
-$z_e(x) \rightarrow nearset neightbor \rightarrow e_k$
+$z_e(x) \rightarrow nearest\space neightbor \rightarrow e_k$
 
 $q(z=k|x) = \begin{cases}1, & for\space k ==argmin_j\left \| z_e(x)-e_j \right \| \\ 0, &otherwise\end{cases}$
 
