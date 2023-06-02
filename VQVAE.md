@@ -43,9 +43,9 @@ posteriors and priors in VAEs are assumed normally distributed with diagonal cov
 
 *latent embedding space*: $e \in R^{K\times D}$, K表示离散空间向量的数量，D表示隐向量的维度
 
-$input:x \rightarrow encoder \rightarrow z_e(x)$
+$input:x \rightarrow encoder \rightarrow z_e(x)$ 
 
-$z_e(x) \rightarrow nearest\space neightbor \rightarrow e_k$
+$z_e(x) \rightarrow nearest\space neightbor \rightarrow e_k$ 
 
 $q(z=k|x) = \begin{cases}1, & for\space k ==argmin_j\left \| z_e(x)-e_j \right \| \\ 0, &otherwise\end{cases}$
 
