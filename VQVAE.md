@@ -38,7 +38,7 @@ posteriors and priors in VAEs are assumed normally distributed with diagonal cov
 
 **VQVAE**
 
-![arch](/Users/jerry/Blog/AIGC/imgs/vqvae.png)
+![arch](./imgs/vqvae.png)
 
 **1. 离散隐变量**
 
