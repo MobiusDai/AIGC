@@ -38,7 +38,7 @@ posteriors and priors in VAEs are assumed normally distributed with diagonal cov
 
 **VQVAE**
 
-<img src="/Users/jerry/Library/Application Support/typora-user-images/截屏2023-06-01 11.14.32.png" alt="截屏2023-06-01 11.14.32"  />
+![arch](/Users/jerry/Blog/AIGC/imgs/vqvae.png)
 
 **1. 离散隐变量**
 
@@ -62,10 +62,8 @@ VQVAE使用类似于直通估计器（straight-through estimator）的方法来�
 
 在前向计算过程中，最相似的的嵌入$Z_q(x)$被传递给解码器，而在反向传播过程中梯度$\nabla_z L$ 以原样传递给编码器。由于编码器的输出表示和解码器的输入共享相同的D维空间，梯度包含了有关编码器如何改变其输出以降低重构损失的有用信息。
 
-*loss function:*
-$$
-\mathbb{L} = log \mathit{p(x|z_q(x))} + \left \| sg[z_e(x)] -e\right \|^2_2 +\beta \left \| z_e(x) -sg[e] \right \|
-$$
+*loss function:* $\mathbb{L} = log \mathit{p(x|z_q(x))} + \left \| sg[z_e(x)] -e\right \|^2_2 +\beta \left \| z_e(x) -sg[e] \right \|$
+
 ***sg** stands for the stopgradient operator*
 
 ```
