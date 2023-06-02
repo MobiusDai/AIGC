@@ -47,7 +47,7 @@ $input:x \rightarrow encoder \rightarrow z_e(x)$
 
 $z_e(x) \rightarrow nearest\space neightbor \rightarrow e_k$ 
 
-$q(z=k|x) = \begin{cases}1, & for\space k ==argmin_j\left \| z_e(x)-e_j \right \| \\ 0, &otherwise\end{cases}$
+$q(z=k|x) = 1\space for\space k ==argmin_j\left \| z_e(x)-e_j \right \| \space otherwise\space 0$ 
 
 $p(z) \sim Uniform([0, 1, \dots , K])$ 
 
